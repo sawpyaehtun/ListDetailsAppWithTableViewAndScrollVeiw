@@ -38,9 +38,10 @@ class SearchViewController: UIViewController {
     }
  
     private func setupUI(){
-        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
-        self.navigationController!.navigationBar.titleTextAttributes = textAttributes as [NSAttributedString.Key : Any]
-        self.navigationController!.navigationBar.topItem!.title = "Search"
+        self.title = "Search"
+//        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+//        self.navigationController!.navigationBar.titleTextAttributes = textAttributes as [NSAttributedString.Key : Any]
+//        self.navigationController!.navigationBar.topItem!.title = "Search"
         imgSearch.tintColor = UIColor.white
         techbtn.layer.cornerRadius = techbtn.frame.height / 2
         sciencebtn.layer.cornerRadius = sciencebtn.frame.height / 2
